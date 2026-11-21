@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #fff7f9;
+  color: #1f2937;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sakhi-gradient {
+  background: linear-gradient(135deg, #e11d48, #be123c);
+}
+
+.sakhi-light-gradient {
+  background: linear-gradient(135deg, #fff1f2, #fdf2f8);
+}
+
+.sos-pulse {
+  animation: pulseSOS 2s infinite;
+}
+
+@keyframes pulseSOS {
+  0% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.45);
+  }
+
+  70% {
+    box-shadow: 0 0 0 25px rgba(225, 29, 72, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0);
+  }
+}
